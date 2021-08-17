@@ -1,0 +1,7 @@
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\ShippingQuote\bin\Debug\ShippingQuote.exe.config
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\ShippingQuote\bin\Debug\ShippingQuote.exe
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\ShippingQuote\bin\Debug\ShippingQuote.pdb
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\ShippingQuote\obj\Debug\ShippingQuote.csproj.AssemblyReference.cache
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\ShippingQuote\obj\Debug\ShippingQuote.csproj.CoreCompileInputs.cache
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\ShippingQuote\obj\Debug\ShippingQuote.exe
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\ShippingQuote\obj\Debug\ShippingQuote.pdb
