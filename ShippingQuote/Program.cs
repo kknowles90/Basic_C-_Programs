@@ -32,6 +32,11 @@ namespace ShippingQuote
                 Console.WriteLine("Package too big to be shipped via Package Express.");
                 Console.ReadLine();
             }
+            else if (iweight > 50)
+            {
+                Console.WriteLine("Package too heavy to be shipped via Package Express.");
+                Console.ReadLine();
+            }
             else
             {
                 float estimatedTotal = (iweight * iheight * ilength * iwidth) / 100;
