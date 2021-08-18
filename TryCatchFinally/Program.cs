@@ -20,19 +20,19 @@ namespace TryCatchFinally
                     Console.WriteLine(inputint / num);
                 }
             }
-            catch (FormatException ex)
+            catch (FormatException ex)//invalid format exception such as inserting a string or character
             {
                 Console.WriteLine(ex.Message);
             }
-            catch (DivideByZeroException ex)
+            catch (DivideByZeroException ex)//invalid divide by 0 exception which would require list change
             {
                 Console.WriteLine(ex.Message);
             }
-            catch (Exception ex)
+            catch (Exception ex)//all other exceptions
             {
                 Console.WriteLine(ex.Message);
             }
-            finally
+            finally//finally statement mainly used for creating an error log
             {
                 Console.ReadLine();
             }
