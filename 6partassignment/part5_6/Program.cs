@@ -14,17 +14,17 @@ namespace part5_6
             Console.WriteLine("Please enter an animal from the list");
             string inputanimal = Console.ReadLine();
 
-            int i = 0;
+            int i = 0;//to record indicies
             foreach (string name in newList)
             {
                 if (inputanimal == name)
                 {
-                    Console.WriteLine(i);
+                    Console.WriteLine(i);//writes match indicies
                     i++;
                 }
                 else
                 {
-                    i++;
+                    i++;//add an idicies for nonmatch
                 }
             }
             Console.ReadLine();
@@ -36,12 +36,12 @@ namespace part5_6
             {
                 if (checklist.Contains(name))
                 {
-                    Console.WriteLine(name + " has already appeared prior to this");
+                    Console.WriteLine(name + " has already appeared prior to this");//message for duplicates
                 }
                 else
                 {
                     Console.WriteLine(name + " has not appeared on this prior to this");
-                    checklist.Add(name);
+                    checklist.Add(name);//adding name to checklist to filter out unused names
                 }
                
             }

@@ -59,14 +59,14 @@ namespace _6PartArray
             string incourse = Console.ReadLine();
             List<string> coursesUCF = new List<string>() { "vibrations", "aerodynamics", "modeling", "measurements" };
 
-            foreach (string name in coursesUCF)
+            foreach (string name in coursesUCF)//filters each one to determine the matched outcome
             {
                 if (incourse == "vibrations")
                 {
 
                     Console.WriteLine("You have choosen vibrations");
                     Console.ReadLine();
-                    break;
+                    break;//breaks cycle once match found
                 }
 
                 else if (incourse == "aerodynamics")
