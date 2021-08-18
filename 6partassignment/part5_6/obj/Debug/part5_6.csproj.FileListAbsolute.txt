@@ -1,0 +1,7 @@
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\part5_6\bin\Debug\part5_6.exe.config
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\part5_6\bin\Debug\part5_6.exe
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\part5_6\bin\Debug\part5_6.pdb
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\part5_6\obj\Debug\part5_6.csproj.AssemblyReference.cache
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\part5_6\obj\Debug\part5_6.csproj.CoreCompileInputs.cache
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\part5_6\obj\Debug\part5_6.exe
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\part5_6\obj\Debug\part5_6.pdb
