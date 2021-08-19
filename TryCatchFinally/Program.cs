@@ -17,7 +17,7 @@ namespace TryCatchFinally
                 int inputint = Convert.ToInt32(Console.ReadLine());
                 foreach (int num in divideby)
                 {
-                    Console.WriteLine(inputint / num);
+                    Console.WriteLine(num / inputint);
                 }
             }
             catch (FormatException ex)//invalid format exception such as inserting a string or character
