@@ -36,10 +36,13 @@ namespace Methods
 
             Methods n = new Methods();//calls first method and returns total
             int total1 = n.Method1(num);
+            Console.WriteLine(total1);
 
             int total2 = n.Method2(total1);//calls and returns second total
+            Console.WriteLine(total2);
 
             int total3 = n.Method3(total2);//calls and returns method 3 total.
+           
 
             Console.WriteLine("Your answer is: " + total3);
             Console.ReadLine();
