@@ -14,11 +14,11 @@ namespace Method2
             return total1;
         }
 
-        public double Deci(float var2)//takes in a decimal, output is an int
+        public int Deci(decimal var2)//takes in a decimal, output is an int
         {
 
             var2 = var2 + 12;
-            double total2 = var2;
+            int total2 = Convert.ToInt32(var2);
             return total2;
         }
 
@@ -47,7 +47,7 @@ namespace Method2
             Console.WriteLine("Insert an integer to be added by 12, divided by 2, and multiplied by 10:");
             int num = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Insert a decimal to be converted to interger: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
+            decimal num2 = Convert.ToDecimal(Console.ReadLine());
             Console.WriteLine("Insert an integer:");
             string var3 = Console.ReadLine(); 
             
@@ -55,7 +55,7 @@ namespace Method2
             int total1 = n.Method1(num);
             Console.WriteLine(total1);
 
-            int total2 = Convert.ToInt32(n.Deci(num));//calls Deci method
+            int total2 = Convert.ToInt32(n.Deci(num2));//calls Deci method
             Console.WriteLine(total2);
 
             int total3 = n.Strin(var3);//calls string to int method
