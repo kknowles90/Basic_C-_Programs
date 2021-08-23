@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace Class
 {
-    static class Methods
+
+    public static class statclass
+     {
+        //a class for static emembers, can't be instantiated, is sealed, and cannont contain instance constructors.
+     }
+
+
+    class Methods
     {
-        public static void Method1(int num)//method1 runs and divides data by 2 and outputs
+        public void Method1(int num)//method1 runs and divides data by 2 and outputs
         {
             int total1 = num / 2;
             Console.WriteLine(total1);
@@ -16,7 +23,7 @@ namespace Class
             
         }
 
-        public static int Metho1(int num2, int num3)//overload method1 with output parameters of int
+        public int Method1(int num2, int num3)//overload method1 with output parameters of int
         {
             num2 = 5;
             num3 = 6;
@@ -34,8 +41,9 @@ namespace Class
             Console.WriteLine("Insert an integer to be divided by 2:");
             int num = Convert.ToInt32(Console.ReadLine());
 
+            Methods n = new Methods();
 
-            Methods.Method1(num);
+            n.Method1(num);
             
             
             
