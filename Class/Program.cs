@@ -23,12 +23,13 @@ namespace Class
             
         }
 
-        public int Method1(int num2, int num3)//overload method1 with output parameters of int
+        public int Method1(int num, int num2 = 2)//overload method1 with output parameters of int
         {
-            num2 = 5;
-            num3 = 6;
+
+            int total1 = num / num2;
             //Not sure what else you want me to put in overloaded method.
-            return 0;
+            Console.WriteLine(total1);
+            return total1;
         }
 
 
