@@ -8,18 +8,14 @@ namespace Method4
 {
     class Methods
     {
-        public int Method1(int var)//method1 runs and returns var + 12
+        public int Method1(int var1, int var2 = 10)//method1 runs and returns var + 12
         {
 
-            int total1 = var + 12;
-            return total1;
-        }
-
-        public int Method1(int var1, int var2)
-        {
             int total1 = var1 + 12 + var2;
             return total1;
         }
+
+ 
     }
 
     class program
@@ -36,7 +32,7 @@ namespace Method4
             
             Methods n = new Methods();//calls first method and returns total
             
-            if (opt != null)
+            if (opt != "")
             {
                 int optionalvar2 = Convert.ToInt32(opt);
                 int total1 = n.Method1(var1, optionalvar2);
