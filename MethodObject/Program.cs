@@ -14,7 +14,9 @@ namespace MethodObject
             Employee Person = new Employee();
             Person.FirstName = "Sample";
             Person.LastName = "Student";
-            Person.SayName();//Calls method SayName from Person class
+            //Person.SayName();//Calls method SayName from Person class
+            Person.SayName();
+
            
         }
 

@@ -9,7 +9,16 @@ namespace MethodObject
     public class Employee : Person //inherits from person class
     {
         
-        public int Id { get; set; }  
-        
+        public int Id { get; set; }
+
+        public override void SayName()//uses Person.SayName as base
+        {
+            Console.WriteLine("This is the information requested");
+            base.SayName();
+        }
+
+
     }
 }
+
+
