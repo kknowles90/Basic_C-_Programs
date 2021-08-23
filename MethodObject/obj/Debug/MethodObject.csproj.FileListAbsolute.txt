@@ -1,0 +1,7 @@
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\MethodObject\bin\Debug\MethodObject.exe.config
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\MethodObject\bin\Debug\MethodObject.exe
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\MethodObject\bin\Debug\MethodObject.pdb
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\MethodObject\obj\Debug\MethodObject.csproj.AssemblyReference.cache
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\MethodObject\obj\Debug\MethodObject.csproj.CoreCompileInputs.cache
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\MethodObject\obj\Debug\MethodObject.exe
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\MethodObject\obj\Debug\MethodObject.pdb
