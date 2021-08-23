@@ -1,0 +1,7 @@
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\Class\bin\Debug\Class.exe.config
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\Class\bin\Debug\Class.exe
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\Class\bin\Debug\Class.pdb
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\Class\obj\Debug\Class.csproj.AssemblyReference.cache
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\Class\obj\Debug\Class.csproj.CoreCompileInputs.cache
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\Class\obj\Debug\Class.exe
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\Class\obj\Debug\Class.pdb
