@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MethodObject
 {
-    public class Employee : Person //inherits from person class
+    public class Employee : Person, IQuittable //inherits from person class
     {
         
         public int Id { get; set; }
@@ -15,6 +15,11 @@ namespace MethodObject
         {
             Console.WriteLine("This is the information requested");
             base.SayName();
+        }
+        public void Quit()
+        {
+            Console.WriteLine("Calling interface");
+            Console.ReadLine();
         }
 
 
