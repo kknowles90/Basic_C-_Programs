@@ -12,13 +12,14 @@ namespace MethodObject
         {
 
             Employee Person = new Employee();
-            Employee IQuittable = new Employee();
+            IQuittable Quitter = new Employee();
             Person.FirstName = "Sample";
             Person.LastName = "Student";
             //Person.SayName();//Calls method SayName from Person class
-            Person.SayName();
+            //Person.SayName();
 
-            
+            Quitter.Quit("Mark");
+            Console.ReadLine();
             
 
            

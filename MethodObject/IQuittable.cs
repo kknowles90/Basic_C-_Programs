@@ -8,10 +8,9 @@ namespace MethodObject
 {
     interface IQuittable
     {
-        void Quit(Person FirstName);
-        
-
-        
+        void Quit(string FirstName);
+          
+           
     }
     
 

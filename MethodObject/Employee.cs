@@ -11,16 +11,16 @@ namespace MethodObject
         
         public int Id { get; set; }
 
-        public override void SayName()//uses Person.SayName as base
-        {
-            Console.WriteLine("Name: " + FirstName + " " + LastName);//outputs example Name: FirstName LastName
-            Console.ReadLine();//to see if it was called
-            base.SayName();
-        }
+        //public override void SayName()//uses Person.SayName as base
+        //{
+            //Console.WriteLine("Name: " + FirstName + " " + LastName);//outputs example Name: FirstName LastName
+            //Console.ReadLine();//to see if it was called
+            //base.SayName();
+        //}
 
-        public void IQuittable(Person FirstName)
+        public void Quit(string FirstName)
         {
-            throw new NotFiniteNumberException();
+            Console.WriteLine("This is working");
         }
 
 
