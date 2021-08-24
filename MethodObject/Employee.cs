@@ -17,7 +17,11 @@ namespace MethodObject
             Console.ReadLine();//to see if it was called
             base.SayName();
         }
-        
+
+        public void IQuittable(Person FirstName)
+        {
+            throw new NotFiniteNumberException();
+        }
 
 
     }

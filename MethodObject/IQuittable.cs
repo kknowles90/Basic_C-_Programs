@@ -8,11 +8,8 @@ namespace MethodObject
 {
     interface IQuittable
     {
-        public void Quit()
-        {
-            Console.WriteLine("Calling interface");
-            Console.ReadLine();
-        }
+        void Quit(Person FirstName);
+        
 
         
     }

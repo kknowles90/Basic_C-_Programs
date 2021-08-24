@@ -18,7 +18,7 @@ namespace MethodObject
             //Person.SayName();//Calls method SayName from Person class
             Person.SayName();
 
-            void quit();
+            
             
 
            

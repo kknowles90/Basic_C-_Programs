@@ -13,8 +13,7 @@ namespace MethodObject
 
         public virtual void SayName()//superclass being called
         {
-            Console.WriteLine("Name: " + FirstName + " " + LastName);//outputs example Name: FirstName LastName
-            Console.ReadLine();//to see if it was called
+            
         }
     }
 }
