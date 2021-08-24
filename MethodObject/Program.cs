@@ -10,20 +10,30 @@ namespace MethodObject
     {
         static void Main(string[] args)
         {
-
-            Employee Person = new Employee();
-            IQuittable Quitter = new Employee();
-            Person.FirstName = "Sample";
-            Person.LastName = "Student";
+            
+            
+            //Employee Person = new Employee();
+            //IQuittable Quitter = new Employee();
+            //Person.FirstName = "Sample";
+            //Person.LastName = "Student";
             //Person.SayName();//Calls method SayName from Person class
             //Person.SayName();
 
-            Quitter.Quit("Mark");
+            //Quitter.Quit("Mark");
             Console.ReadLine();
-            
 
-           
         }
 
+        //public enum DaysOfTheWeek
+        //{
+        //    Monday,
+        //    Tuesday,
+        //    Wednesday,
+        //    Thursday,
+        //    Friday,
+        //    Saturday,
+        //    Sunday
+        //}
+        //DaysOfTheWeek day = DaysOfTheWeek.
     }
 }

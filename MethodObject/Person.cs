@@ -6,15 +6,10 @@ using System.Threading.Tasks;
 
 namespace MethodObject
 {
-    public abstract class Person
+    public class Person
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-
-        //public virtual void SayName()//superclass being called
-        //{
-            
-        //}
 
         
     }
