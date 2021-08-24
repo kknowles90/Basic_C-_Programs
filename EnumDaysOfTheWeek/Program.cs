@@ -37,10 +37,14 @@ namespace EnumDaysOfTheWeek
                         Console.WriteLine("That day has a Enum value of " + intvalue);//outputs the int value of the enum
                          
                     }
+                    else
+                    {
+                        throw new ArgumentException();//I think this will throw an exception that the catch will catch?
+                    }
                 }
         
             }
-            catch (Exception ex)//catches any exceptions
+            catch (ArgumentException ex)//catches any exceptions
             {
                 Console.WriteLine("Please insert a valid day.");
             }
