@@ -17,11 +17,7 @@ namespace MethodObject
             Console.ReadLine();//to see if it was called
             base.SayName();
         }
-        public void Quit()
-        {
-            Console.WriteLine("Calling interface");
-            Console.ReadLine();
-        }
+        
 
 
     }
