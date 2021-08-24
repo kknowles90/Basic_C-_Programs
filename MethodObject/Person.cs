@@ -16,9 +16,6 @@ namespace MethodObject
             
         //}
 
-        //public static Employee operator+ (Employee Id, Person LastName)
-        //{
-          //  Employee.
-        //}
+        
     }
 }

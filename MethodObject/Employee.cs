@@ -23,6 +23,17 @@ namespace MethodObject
             Console.WriteLine("This is working");
         }
 
+        public static Employee operator== (Employee Id, Person LastName)
+        {
+            Id.LastName.Equals(LastName);//sets LastName and Id to equal if == operator is used.
+            return Id;
+        }
+
+        public static Employee operator!= (Employee Id, Person LastName)//if != is used, it will be considered null
+        {
+            return null;
+        }
+
 
     }
 }
