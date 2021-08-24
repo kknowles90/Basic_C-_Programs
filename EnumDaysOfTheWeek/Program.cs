@@ -27,9 +27,9 @@ namespace EnumDaysOfTheWeek
                 
                 var day = Console.ReadLine();
                 string[] values = Enum.GetNames(typeof(DaysOfTheWeek));//creates a 1D array to store enum values
-                for ( int i = 0; i < 6; i++)
+                for ( int i = 0; i < 7; i++)
                 {
-                    var wd = (DaysOfTheWeek)i;
+                    
                     if (day == values[i])
                     {
                         Console.WriteLine((DaysOfTheWeek)i);//outputs the string value of the enum
@@ -37,7 +37,7 @@ namespace EnumDaysOfTheWeek
                         Console.WriteLine("That day has a Enum value of " + intvalue);//outputs the int value of the enum
                          
                     }
-                    else
+                    else if (i == 6)
                     {
                         throw new ArgumentException();//I think this will throw an exception that the catch will catch?
                     }
