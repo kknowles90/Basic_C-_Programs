@@ -13,7 +13,8 @@ namespace MethodObject
 
         public override void SayName()//uses Person.SayName as base
         {
-            Console.WriteLine("This is the information requested");
+            Console.WriteLine("Name: " + FirstName + " " + LastName);//outputs example Name: FirstName LastName
+            Console.ReadLine();//to see if it was called
             base.SayName();
         }
         public void Quit()
