@@ -15,7 +15,8 @@ namespace MethodObject
             Employee a = new Employee() { Id = 1, name = "person1"};
             Employee b = new Employee() { Id = 1, name = "person1" };
             //a.Equals(b);
-            a == b;//this would also work.
+            
+            Console.WriteLine(a.Id == b.Id);
             //IQuittable Quitter = new Employee();
             //Person.FirstName = "Sample";
             //Person.LastName = "Student";

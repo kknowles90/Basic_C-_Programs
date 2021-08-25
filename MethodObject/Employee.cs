@@ -45,7 +45,7 @@ namespace MethodObject
 
         public static bool operator !=(Employee a, Employee b)
         {
-            return !(a.Id == b.Id);
+            return !(a.Id != b.Id);
         }
 
 
