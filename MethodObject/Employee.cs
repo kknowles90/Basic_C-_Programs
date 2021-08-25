@@ -40,18 +40,12 @@ namespace MethodObject
 
         public static bool operator ==(Employee a, Employee b)
         {
-            if (System.Object.ReferenceEquals(a, b))
-                return true;
-
-            if ((object)a == null || (object)b == null)
-                return false;
-
-            return a.Id == b.Id && a.name == b.name;
+            return a.Id == b.Id;
         }
 
         public static bool operator !=(Employee a, Employee b)
         {
-            return !(a == b);
+            return !(a.Id == b.Id);
         }
 
 
