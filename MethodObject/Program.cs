@@ -10,9 +10,12 @@ namespace MethodObject
     {
         static void Main(string[] args)
         {
-            
-            
-            //Employee Person = new Employee();
+
+
+            Employee a = new Employee() { Id = 1, name = "person1"};
+            Employee b = new Employee() { Id = 1, name = "person1" };
+            a.Equals(b);
+            //this would also work.
             //IQuittable Quitter = new Employee();
             //Person.FirstName = "Sample";
             //Person.LastName = "Student";
@@ -21,6 +24,7 @@ namespace MethodObject
 
             //Quitter.Quit("Mark");
             Console.ReadLine();
+            
 
         }
 

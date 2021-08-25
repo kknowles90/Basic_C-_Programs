@@ -10,6 +10,7 @@ namespace MethodObject
     {
         
         public int Id { get; set; }
+        public string name { get; set; }
 
 
 
@@ -36,29 +37,21 @@ namespace MethodObject
         //    return null;
         //}
 
-        public static bool operator ==(Employee employee, Employee employee2)
+
+        public static bool operator ==(Employee a, Employee b)
         {
-            if (employee.Id == employee2.Id)
+            if (System.Object.ReferenceEquals(a, b))
                 return true;
-            else
+
+            if ((object)a == null || (object)b == null)
                 return false;
 
-            //but you should use 
-            //return employee.ID == employee2.ID;
+            return a.Id == b.Id && a.name == b.name;
         }
 
-        public static bool operator !=(Employee employee, Employee employee2)
+        public static bool operator !=(Employee a, Employee b)
         {
-            return employee.Id != employee2.Id;
-        }
-
-        public override bool Equals(object obj)
-        {
-            var emp = obj as Employee;
-            if (emp == null)
-                return false;
-
-            return this.Id.Equals(emp.Id);
+            return !(a == b);
         }
 
 
