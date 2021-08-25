@@ -21,6 +21,8 @@ namespace Lambda
             this.ID = ID;
         }
 
+        List<Employee> empList = new List<Employee>();
+
         Employee num1 = new Employee("Joe", "Smow", 1);
         Employee num2 = new Employee("Joe", "Biden", 2);
         Employee num3 = new Employee("Kyle", "Lawerance", 3);
@@ -31,6 +33,8 @@ namespace Lambda
         Employee num8 = new Employee("Alex", "Ronalds", 8);
         Employee num9 = new Employee("Johnny", "Cash", 9);
         Employee num10 = new Employee("Malcom", "Smith", 10);
+
+        empList.Add(num1);
 
         foreach (String Name in firstName)
         {
