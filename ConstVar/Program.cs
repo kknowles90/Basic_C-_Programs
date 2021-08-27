@@ -14,6 +14,9 @@ namespace ConstVar
 
             var example2 = "this is a variable";//creates a var called example2
 
+            Student student = new Student("102", "Adam Smith");//Calls the constructor from constructors.cs with two inputs
+            
+
         }
     }
 }
