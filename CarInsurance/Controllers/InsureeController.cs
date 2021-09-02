@@ -41,6 +41,68 @@ namespace CarInsurance.Controllers
             return View();
         }
 
+        public GetQuote(int Id, string FirstName, string LastName, string EmailAddress, DateTime DateOfBirth, int CarYear, string CarMake, string CarModel, bool DUI, int SpeedingTickets, bool CoverageType, decimal Quote)
+        {
+
+
+            Quote = 50;
+            int age = DateTime.Now.Subtract(DateOfBirth).Days;
+            age = age / 365;//converts DateOfBirth to age in years.
+
+            //Age of driver
+            if (age < 18)
+            {
+                Quote += 50;
+            }
+            else if (age < 25)
+            {
+                Quote += 25;
+            }
+            else
+            {
+                Quote += 50;
+            }
+
+            //CarYear input
+            if (CarYear < 2000)
+            {
+                Quote += 25;
+            }
+            if (CarYear > 2015)
+            {
+                Quote += 25;
+            }
+
+            //carmake and model input
+            if (CarMake == "Porsche")
+            {
+                Quote += 25;
+            }
+
+            if (CarMake == "Porsche" && CarModel == "911 Carrera")
+            {
+                Quote += 25;
+            }
+
+            //input for speeding tickets
+            int SpeedingTicketValue = SpeedingTickets * 10;
+            Quote += SpeedingTicketValue;
+
+            //input for DUI
+            if (DUI == true)
+            {
+                Quote += 25;
+            }
+
+            //coverage input
+            if (CoverageType == true)
+            {
+                Quote += Quote / 2;
+            }
+
+            return Insuree.Quote;
+        }
+
         // POST: Insuree/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
@@ -115,66 +177,7 @@ namespace CarInsurance.Controllers
             return RedirectToAction("Index");
         }
         
-        public GetQuote(int Id, string FirstName, string LastName, string EmailAddress, DateTime DateOfBirth, int CarYear, string CarMake, string CarModel, bool DUI, int SpeedingTickets, bool CoverageType, decimal Quote)
-        {
-
-            Quote = 50;
-            int age = DateTime.Now.Subtract(DateOfBirth).Days;
-            age = age / 365;//converts DateOfBirth to age in years.
-            
-            //Age of driver
-            if (age < 18)
-            {
-                Quote += 50;
-            }
-            else if (age < 25)
-            {
-                Quote += 25;
-            }
-            else
-            {
-                Quote += 50;
-            }
-            
-            //CarYear input
-            if (CarYear < 2000)
-            {
-                Quote += 25;
-            }
-            if(CarYear > 2015)
-            {
-                Quote += 25;
-            }
-
-            //carmake and model input
-            if(CarMake == "Porsche")
-            {
-                Quote += 25;
-            }
-
-            if (CarMake == "Porsche" && CarModel == "911 Carrera")
-            {
-                Quote += 25;
-            }
-
-            //input for speeding tickets
-            int SpeedingTicketValue = SpeedingTickets * 10;
-            Quote += SpeedingTicketValue;
-
-            //input for DUI
-            if (DUI == true)
-            {
-                Quote += 25;
-            }
-
-            //coverage input
-            if(CoverageType == true)
-            {
-                Quote += Quote / 2;
-            }
-          
-            return Insuree;
-        }
+        
 
         public ActionResult Admin()
         {
