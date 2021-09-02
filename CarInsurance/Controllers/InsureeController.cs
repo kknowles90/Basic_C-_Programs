@@ -114,8 +114,8 @@ namespace CarInsurance.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-        [HttpPost]
-        public ActionResult GetQuote(int Id, string FirstName, string LastName, string EmailAddress, DateTime DateOfBirth, int CarYear, string CarMake, string CarModel, bool DUI, int SpeedingTickets, bool CoverageType, decimal Quote)
+        
+        public GetQuote(int Id, string FirstName, string LastName, string EmailAddress, DateTime DateOfBirth, int CarYear, string CarMake, string CarModel, bool DUI, int SpeedingTickets, bool CoverageType, decimal Quote)
         {
 
             Quote = 50;
@@ -172,8 +172,8 @@ namespace CarInsurance.Controllers
             {
                 Quote += Quote / 2;
             }
-            
-            return View;
+          
+            return Insuree;
         }
 
         public ActionResult Admin()
@@ -187,20 +187,20 @@ namespace CarInsurance.Controllers
                     Insuree insuree = new Insuree();
                     insuree.FirstName = var1.FirstName;
                     insuree.LastName = var1.LastName;
-                    insuree.Id = var1.Id;
                     insuree.EmailAddress = var1.EmailAddress;
-                    insuree.DateOfBirth = var1.DateOfBirth;
-                    insuree.CarYear = var1.CarYear;
-                    insuree.CarMake = var1.CarMake;
-                    insuree.CarModel = var1.CarModel;
-                    insuree.DUI = var1.DUI;
-                    insuree.SpeedingTickets = var1.SpeedingTickets;
-                    insuree.CoverageType = var1.CoverageType;
-                    insuree.Quote = var1.Quote;
-                    allinsurees.Add(insuree);
                     GetQuote(insuree.Id, insuree.FirstName, insuree.LastName, insuree.EmailAddress, insuree.DateOfBirth, insuree.CarYear, insuree.CarMake, insuree.CarModel, insuree.DUI, insuree.SpeedingTickets, insuree.CoverageType, insuree.Quote);
+                    //insuree.Id = var1.Id;
+                    //insuree.DateOfBirth = var1.DateOfBirth;
+                    //insuree.CarYear = var1.CarYear;
+                    //insuree.CarMake = var1.CarMake;
+                    //insuree.CarModel = var1.CarModel;
+                    //insuree.DUI = var1.DUI;
+                    //insuree.SpeedingTickets = var1.SpeedingTickets;
+                    //insuree.CoverageType = var1.CoverageType;
+                    allinsurees.Add(insuree);
+                   
                 }
-                return View(Admin);
+                return View(insurees);
             }
         }
 
