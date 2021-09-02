@@ -37,17 +37,19 @@ namespace CarInsurance.Controllers
 
         // GET: Insuree/Create
         public ActionResult Create()
-        {
+        {      
             return View();
+   
         }
 
-        public GetQuote(int Id, string FirstName, string LastName, string EmailAddress, DateTime DateOfBirth, int CarYear, string CarMake, string CarModel, bool DUI, int SpeedingTickets, bool CoverageType, decimal Quote)
+        public decimal GetQuote(int Id, string FirstName, string LastName, string EmailAddress, DateTime DateOfBirth, int CarYear, string CarMake, string CarModel, bool DUI, int SpeedingTickets, bool CoverageType, decimal Quote)
         {
 
-
+            
             Quote = 50;
-            int age = DateTime.Now.Subtract(DateOfBirth).Days;
-            age = age / 365;//converts DateOfBirth to age in years.
+            DateTime current = DateTime.Now;
+            int age = current.Year - DateOfBirth.Year;
+            
 
             //Age of driver
             if (age < 18)
@@ -100,7 +102,7 @@ namespace CarInsurance.Controllers
                 Quote += Quote / 2;
             }
 
-            return Insuree.Quote;
+            return Quote;
         }
 
         // POST: Insuree/Create
@@ -112,6 +114,8 @@ namespace CarInsurance.Controllers
         {
             if (ModelState.IsValid)
             {
+                
+                insuree.Quote = GetQuote(insuree.Id, insuree.FirstName, insuree.LastName, insuree.EmailAddress, insuree.DateOfBirth, insuree.CarYear, insuree.CarMake, insuree.CarModel, insuree.DUI, insuree.SpeedingTickets, insuree.CoverageType, insuree.Quote);
                 db.Insurees.Add(insuree);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -181,30 +185,7 @@ namespace CarInsurance.Controllers
 
         public ActionResult Admin()
         {
-            using (InsuranceEntities db = new InsuranceEntities())
-            {
-                var insurees = db.Insurees;
-                var allinsurees = new List<Insuree>();
-                foreach (var var1 in insurees)
-                {
-                    Insuree insuree = new Insuree();
-                    insuree.FirstName = var1.FirstName;
-                    insuree.LastName = var1.LastName;
-                    insuree.EmailAddress = var1.EmailAddress;
-                    GetQuote(insuree.Id, insuree.FirstName, insuree.LastName, insuree.EmailAddress, insuree.DateOfBirth, insuree.CarYear, insuree.CarMake, insuree.CarModel, insuree.DUI, insuree.SpeedingTickets, insuree.CoverageType, insuree.Quote);
-                    //insuree.Id = var1.Id;
-                    //insuree.DateOfBirth = var1.DateOfBirth;
-                    //insuree.CarYear = var1.CarYear;
-                    //insuree.CarMake = var1.CarMake;
-                    //insuree.CarModel = var1.CarModel;
-                    //insuree.DUI = var1.DUI;
-                    //insuree.SpeedingTickets = var1.SpeedingTickets;
-                    //insuree.CoverageType = var1.CoverageType;
-                    allinsurees.Add(insuree);
-                   
-                }
-                return View(insurees);
-            }
+            return View(db.Insurees.ToList());
         }
 
         protected override void Dispose(bool disposing)
