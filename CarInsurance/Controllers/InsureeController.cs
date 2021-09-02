@@ -115,15 +115,9 @@ namespace CarInsurance.Controllers
             return RedirectToAction("Index");
         }
         [HttpPost]
-        public ActionResult GetQuote(Insuree)
+        public ActionResult GetQuote(int Id, string FirstName, string LastName, string EmailAddress, DateTime DateOfBirth, int CarYear, string CarMake, string CarModel, bool DUI, int SpeedingTickets, bool CoverageType, decimal Quote)
         {
-            using (InsuranceEntities db = new InsuranceEntities())
-            {
-                var insuree = db.Insurees;
-                var ListQuote = new List<Insuree>;
 
-            }
-            
             Quote = 50;
             int age = DateTime.Now.Subtract(DateOfBirth).Days;
             age = age / 365;//converts DateOfBirth to age in years.
@@ -178,21 +172,35 @@ namespace CarInsurance.Controllers
             {
                 Quote += Quote / 2;
             }
-            return null;
+            
+            return View;
         }
 
         public ActionResult Admin()
         {
-            using (InsuranceEntities db = new InsuranceEntities)
+            using (InsuranceEntities db = new InsuranceEntities())
             {
-                var adminlist = new List<Insuree>();
-                foreach (var insuree in adminlist)
+                var insurees = db.Insurees;
+                var allinsurees = new List<Insuree>();
+                foreach (var var1 in insurees)
                 {
-                    var newlist = new Insuree();
-                    
-                    
-                    
+                    Insuree insuree = new Insuree();
+                    insuree.FirstName = var1.FirstName;
+                    insuree.LastName = var1.LastName;
+                    insuree.Id = var1.Id;
+                    insuree.EmailAddress = var1.EmailAddress;
+                    insuree.DateOfBirth = var1.DateOfBirth;
+                    insuree.CarYear = var1.CarYear;
+                    insuree.CarMake = var1.CarMake;
+                    insuree.CarModel = var1.CarModel;
+                    insuree.DUI = var1.DUI;
+                    insuree.SpeedingTickets = var1.SpeedingTickets;
+                    insuree.CoverageType = var1.CoverageType;
+                    insuree.Quote = var1.Quote;
+                    allinsurees.Add(insuree);
+                    GetQuote(insuree.Id, insuree.FirstName, insuree.LastName, insuree.EmailAddress, insuree.DateOfBirth, insuree.CarYear, insuree.CarMake, insuree.CarModel, insuree.DUI, insuree.SpeedingTickets, insuree.CoverageType, insuree.Quote);
                 }
+                return View(Admin);
             }
         }
 
