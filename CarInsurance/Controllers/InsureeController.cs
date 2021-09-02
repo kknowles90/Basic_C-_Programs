@@ -114,6 +114,87 @@ namespace CarInsurance.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        [HttpPost]
+        public ActionResult GetQuote(Insuree)
+        {
+            using (InsuranceEntities db = new InsuranceEntities())
+            {
+                var insuree = db.Insurees;
+                var ListQuote = new List<Insuree>;
+
+            }
+            
+            Quote = 50;
+            int age = DateTime.Now.Subtract(DateOfBirth).Days;
+            age = age / 365;//converts DateOfBirth to age in years.
+            
+            //Age of driver
+            if (age < 18)
+            {
+                Quote += 50;
+            }
+            else if (age < 25)
+            {
+                Quote += 25;
+            }
+            else
+            {
+                Quote += 50;
+            }
+            
+            //CarYear input
+            if (CarYear < 2000)
+            {
+                Quote += 25;
+            }
+            if(CarYear > 2015)
+            {
+                Quote += 25;
+            }
+
+            //carmake and model input
+            if(CarMake == "Porsche")
+            {
+                Quote += 25;
+            }
+
+            if (CarMake == "Porsche" && CarModel == "911 Carrera")
+            {
+                Quote += 25;
+            }
+
+            //input for speeding tickets
+            int SpeedingTicketValue = SpeedingTickets * 10;
+            Quote += SpeedingTicketValue;
+
+            //input for DUI
+            if (DUI == true)
+            {
+                Quote += 25;
+            }
+
+            //coverage input
+            if(CoverageType == true)
+            {
+                Quote += Quote / 2;
+            }
+            return null;
+        }
+
+        public ActionResult Admin()
+        {
+            using (InsuranceEntities db = new InsuranceEntities)
+            {
+                var adminlist = new List<Insuree>();
+                foreach (var insuree in adminlist)
+                {
+                    var newlist = new Insuree();
+                    
+                    
+                    
+                }
+            }
+        }
 
         protected override void Dispose(bool disposing)
         {
