@@ -1,0 +1,12 @@
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\EntityFrameworkCodeFirst\bin\Debug\EntityFrameworkCodeFirst.exe.config
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\EntityFrameworkCodeFirst\bin\Debug\EntityFrameworkCodeFirst.exe
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\EntityFrameworkCodeFirst\bin\Debug\EntityFrameworkCodeFirst.pdb
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\EntityFrameworkCodeFirst\bin\Debug\EntityFramework.dll
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\EntityFrameworkCodeFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\EntityFrameworkCodeFirst\bin\Debug\EntityFramework.xml
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\EntityFrameworkCodeFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\EntityFrameworkCodeFirst\obj\Debug\EntityFrameworkCodeFirst.csproj.AssemblyReference.cache
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\EntityFrameworkCodeFirst\obj\Debug\EntityFrameworkCodeFirst.csproj.CoreCompileInputs.cache
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\EntityFrameworkCodeFirst\obj\Debug\EntityFrameworkCodeFirst.csproj.CopyComplete
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\EntityFrameworkCodeFirst\obj\Debug\EntityFrameworkCodeFirst.exe
+C:\Users\Yeah buddy\OneDrive\Desktop\Basic_C#_Programs\EntityFrameworkCodeFirst\obj\Debug\EntityFrameworkCodeFirst.pdb
