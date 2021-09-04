@@ -21,12 +21,12 @@
     <li>
       <a href="#Projects">Projects</a>
       <ul>
-        <li><a href="#List1">Car Insurance Quote</a></li>
-        <li><a href="#List2">Shipping Quote</a></li>
-        <li><a href="#List3">Tech Academy MVC</a></li>
-        <li><a href="#List4">Lambda</a></li>
-        <li><a href="#List5">Employee Methods</a></li>
-        <li><a href="#List6">Code First Structuring</a></li>
+        <li><a href="#CarInsuranceQuote">Car Insurance Quote</a></li>
+        <li><a href="#ShippingQuote">Shipping Quote</a></li>
+        <li><a href="#MVC">Tech Academy MVC</a></li>
+        <li><a href="#Lambda">Lambda</a></li>
+        <li><a href="#Methods">Employee Methods</a></li>
+        <li><a href="#CodeFirst">Code First Structuring</a></li>
       </ul>
       <li><a href="#contact">Contact</a></li>
   </ol>
@@ -38,33 +38,33 @@
   I am attempting to start my own career within software development, in which I hope to expand my collection of Github projects.
   In the meantime, please enjoy the few projects I have. Please feel free to contact me if you have any questions, comments, or concerns.
   
-  ## List1
+  ## CarInsuranceQuote
   (https://github.com/kknowles90/Basic_C-_Programs/tree/main/CarInsurance)
   This project was an example of how to create a fully functional structured MVC. This takes in roughly ten parameters such as the driver's first name,
   the driver's last name, the birthday of the driver, car year, car make/model, any DUI's, and any speeding tickets. It then formats it into a structured
   index with a quote amount for car insurance. It also has admin privileges where the admin can view an index of everyone's car quotes.
   
-  ## List2
+  ## ShippingQuote
   (https://github.com/kknowles90/Basic_C-_Programs/tree/main/ShippingQuote)
   This a simple C# project that allows an input of parameters to be calculated to create a shipping quote. This was mainly to show how to enforce
   parent classes and inheriting data between classes.
   
-  ## List3
+  ## MVC
   (https://github.com/kknowles90/Basic_C-_Programs/tree/main/TechAcadStudentsMVC)
   The Tech Academy MVC was an example how to structure MVCs. It was a data first example and introduction to learn how code within an MVC.
   It uses examples such as Razor syntax, parent classes, and SQL database connections.
   
-  ## List4
+  ## Lambda
   (https://github.com/kknowles90/Basic_C-_Programs/tree/main/Lambda)
   Lambda is exactly what it states. It has a variety of expressions that I used lambda to solve. I am still adding to it, to create references for
   any future use and it display example cases. In it are roughly ten different examples of anywhere between easy and intermediate lambda expressions.
   
-  ## List5
+  ## Methods
   ()
   Employee Methods demonstrates examples of how to use multiple kinds of methods (mainly public, static, and void). It shows the ability
   to store methods in classes, how to call the method, and get an expected return. It also shows early stages of structuring between multiple components.
   
-  ## List6
+  ## CodeFirst
   Code First structuring was my first example of inputting the code first and then having a SQL database to be structured as a result of the code that
   was inputted. The code was relatively simple, due to the goal being to under entity frameworks and understand how to build a structure around
   the code.
